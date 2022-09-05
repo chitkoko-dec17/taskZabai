@@ -17,7 +17,7 @@ use App\Http\Controllers\VoteController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-
+Route::get('/','VoteController@lastestvote');
 Route::get('vote-result', 'VoteController@voteresult');
 Route::get('vote-question', 'VoteController@lastestvote');
 Route::post('vote', 'VoteController@dovote');
